@@ -48,13 +48,17 @@ h1 {
  border: 100px ;
  padding: 30px;
  margin:50px;
- width: 400px;
+ width: 1000px;
  height: 150px;
  background:green ;
 }
 
 main p, main li {
   line-height: 2;
+}
+
+h2{
+  
 }
 
 img {

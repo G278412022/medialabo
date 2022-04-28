@@ -36,7 +36,6 @@ header, footer {
 h1, footer p {
   margin: 20px;
   margin: 20px;
-  font- size 100px;;
 }
 
 h1 {
@@ -45,8 +44,6 @@ h1 {
 
 /* main content */
 
-main {
-  padding: 2em;
 }
 
 main p, main li {

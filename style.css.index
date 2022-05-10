@@ -8,3 +8,16 @@ h2{
     height:10px;
     align-items: center;
 }
+
+p:link
+{
+color: aqua;
+}
+
+p:visited{
+    color: aquamarine;
+}
+
+p:hover{
+    color: blueviolet;
+}

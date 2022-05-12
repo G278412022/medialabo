@@ -15,4 +15,12 @@ hantei();
 //ボタンを押したら後の処理をする関数　hantei()の定義
 function hantei(){
     let yoso=4;
+      kaisu=kaisu+1;
+        console.log( kaisu+"回目の予想"+yoso);
+        if(kaisu>=4){
+            console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
+        }if(kotae==yoso){
+            console.log("正解です。おめでとう！")
+        }
+
 }

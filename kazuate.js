@@ -1,5 +1,5 @@
 //答え
-let kotae = Math.floor(Math.randamu()*10+1);
+let kotae = Math.floor(Math.random()*10+1);
 console.log('答え'+kotae);
 
 //入力回数（予想回数）

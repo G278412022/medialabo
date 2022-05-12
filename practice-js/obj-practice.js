@@ -14,5 +14,12 @@ let gakka = [
 	{name: "デザイン学科", ename: "Department of Design"}
 ];
 
-//////////////// ここから下にプログラムを書きたそう!
-
+//////////////// ここから下にプログラムを書きたそう
+console.log(campus.address);
+for(let i=0;i<campus.buildingD.length;i=i+1){
+	console.log(campus.buildingD[i]);
+}
+console.log(gakka.name[0]);
+console.log(gakka.name[1]);
+console.log(gakka.name[2]);
+console.log(gakka.name[3]);

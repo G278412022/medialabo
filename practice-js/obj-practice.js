@@ -19,7 +19,6 @@ console.log(campus.address);
 for(let i=0;i<campus.buildingD.length;i=i+1){
 	console.log(campus.buildingD[i]);
 }
-console.log(gakka.name[0]);
-console.log(gakka.name[1]);
-console.log(gakka.name[2]);
-console.log(gakka.name[3]);
+for(let g of gakka){
+	console.log(g.name);
+}

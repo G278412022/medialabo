@@ -25,10 +25,10 @@ function hantei(){
         if(kaisu==3&&kotae!=yoso){
             console.log("間違い残念でした答えは"+kotae+"でした。");
         }
-        if(kotae>yoso){
+        if(kotae>yoso&&kaisu<4){
             console.log("間違い。答えはもっと大きいですよ。");
         }
-        if(kotae<yoso){
+        if(kotae<yoso&&kaisu<4){
             console.log("間違い。答えはもっと小さいですよ。")
         }
 

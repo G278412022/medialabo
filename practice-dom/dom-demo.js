@@ -27,4 +27,11 @@ li.textContent = 0;
 ul.insertAdjacentElement('beforend',li);
 }
 
+let h2s = document.querySelectorAll('h2');
+
+for(let h2 of h2s) {
+   h2.style.background-Color('palegreen');
+
+
+}
  

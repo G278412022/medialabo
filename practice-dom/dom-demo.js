@@ -1,6 +1,6 @@
 // id が sevenOcean の h2 要素を検索
 // （次の行を完成させる）
-let h2sevenOcean = document.querySelector('h2#savenOcean');
+let h2savenOcean = document.querySelector('h2#savenOcean');
 
 // 7大洋　の名前を配列に代入
 let oceans = [

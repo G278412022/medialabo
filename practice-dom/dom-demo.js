@@ -1,6 +1,6 @@
 // id が sevenOcean の h2 要素を検索
 // （次の行を完成させる）
-let h2sevenOcean = document.querySelector('h2#sevenOcean');
+let h2sevenOcean = document.querySelector('h2#oceans');
 
 // 7大洋　の名前を配列に代入
 let oceans = [
@@ -11,7 +11,7 @@ let oceans = [
   '北太平洋',
   '南太平洋',
   '南極海'
-];
+]
 
 // ul 要素を新規作成する．（次の行を完成させる）
 ul = document.createElement('ul');

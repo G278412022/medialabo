@@ -15,7 +15,7 @@ hantei();
 function hantei(){
     let yoso=4;
       kaisu=kaisu+1;
-         (kaisu+"回目の予想"+yoso);
+         (`${kaisu}回目の予想${yoso}`);
         if(kaisu>=4){
             console.log("答えは"+kotae+"でした。すでにゲームは終わっています。");
         }if(kotae==yoso&&kaisu==1){

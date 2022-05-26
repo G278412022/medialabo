@@ -10,7 +10,7 @@ hantei();
 
 //ボタンを押したら後の処理をする関数　hantei()の定義
 function hantei(){
-    let yoso=4;
+    let yoso=document.quarySelector('input')
       kaisu=kaisu+1;
       let s = document.querySelector('span#kaisu');
       s.textContent = kaisu;

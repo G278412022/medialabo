@@ -80,8 +80,5 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-console.log(data.list.title);
-console.log=i;
-let i=document.quaryselector('p#data1');
-i.textContent=data1;
-
+let ul=document.querySelector('input[name="bangumi"]');
+let bangumi=ul.value;

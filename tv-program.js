@@ -80,5 +80,31 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-let ul=document.querySelector('input[name="bangumi"]');
-let bangumi=ul.value;
+let ul=document.querySelector('print');
+ul.addEventListener('click',sendRequest);
+
+function sendRequest(){
+  let ur1='https://www.nishita-lab.org/web-contents/jsons/nhk/e1-090-j.json';
+
+  axios.get(ur1)
+  .then(showResult)
+  .catch(showError)
+  .then(finish)
+}
+
+function showResult(resp){
+  let data=resp.data;
+  if(typeof data==='string'){
+    data=JSON.parse(data);
+  }
+  console.log(data);
+  console.log(data.x);
+}
+
+function showError(err){
+ console.log(err);
+}
+
+function finish(){
+  console.log('Ajax 通信が終わりました。')
+}

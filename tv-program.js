@@ -84,7 +84,7 @@ let ul=document.querySelector('#print');
 ul.addEventListener('click',sendRequest);
 
 function sendRequest(){
-  let ur1='https://www.nishita-lab.org/web-contents/jsons/nhk/e1-0903-j.json';
+  let ur1='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0000-j.json';
 
   console.log(ur1);
   axios.get(ur1)

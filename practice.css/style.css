@@ -18,6 +18,7 @@ h1 {
 
 h2 {
   font-size: 3.2em;
+  text-align: left;
 }
 
 pli {
@@ -60,6 +61,6 @@ main p, main li {
 
 
 img {
-  float: right
-  margin 0;
+  text-align: left
+  auto;
 }

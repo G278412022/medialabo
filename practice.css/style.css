@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  width: 80em;
+  width: 58em;
   margin: 0 auto;
 }
 
@@ -30,7 +30,6 @@ p,li {
 /* header and footer */
 
 header, footer {
-  height: 10em;
   padding: 2em;
 }
 
@@ -48,8 +47,8 @@ h1 {
  h1,footer{
  border: 100px ;
  padding: 30px;
- margin:50px;
- width: 750px;
+ margin:13px;
+ width: 1000px;
  height: 150px;
  background: #008080;
 }
@@ -60,6 +59,6 @@ main p, main li {
 
 
 
-img {
-  margin-right:auto;
+img.logo{
+  float: right;
 }

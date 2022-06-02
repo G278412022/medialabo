@@ -2,7 +2,7 @@
 
 html {
   font-family: 'Helvetica neue', Arial, 'sans serif';
-  font-size: 10px;
+  font-size: 100%;
 }
 
 body {
@@ -21,8 +21,8 @@ h2 {
   text-align: left;
 }
 
-pli {
-  font-size: 6em;
+p,li {
+  font-size: 1em;
 }
 
 /*+++ more specific section styles +++*/
@@ -61,6 +61,5 @@ main p, main li {
 
 
 img {
-  text-align: left
-  auto;
+  margin-right:auto;
 }

@@ -80,16 +80,17 @@ let data = {
 };
 
 /////////////////// 課題3-2 はここから書き始めよう
-let ul=document.querySelector('print');
+let ul=document.querySelector('#print');
 ul.addEventListener('click',sendRequest);
 
 function sendRequest(){
   let ur1='https://www.nishita-lab.org/web-contents/jsons/nhk/e1-0903-j.json';
 
+  console.log(ur1);
   axios.get(ur1)
   .then(showResult)
   .catch(showError)
-  .then(finish)
+  .then(finish);
 }
 
 function showResult(resp){

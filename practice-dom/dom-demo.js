@@ -3,7 +3,7 @@
 let h2savenOcean = document.querySelector('h2#savenOcean');
 
 // 7大洋　の名前を配列に代入
-let oceans = [
+let oceans= [
   '北極海',
   '北大西洋',
   '南大西洋',
@@ -23,15 +23,21 @@ h2savenOcean.insertAdjacentElement('afterend',ul);
 for (let o of oceans) {
   // （この中を完成させる）
 let li = document.createElement('li');
-li.textContent = 0;
-ul.insertAdjacentElement('beforend',li);
+li.textContent = o;
+o+=1;
+ul.insertAdjacentElement('beforeend',li);
 }
 
 let h2s = document.querySelectorAll('h2');
 
 for(let h2 of h2s) {
-   h2.style.background-Color('palegreen');
+   h2.style.backgroundColor='palegreen';
 
 
+}
+
+let li2=document.querySelectorAll('li');
+for(let li of li2){
+  li.classList.add('orangeUnderline');
 }
  

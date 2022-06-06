@@ -78,19 +78,61 @@ let data = {
     ]
   }
 };
-
 /////////////////// 課題3-2 はここから書き始めよう
 let ul=document.querySelector('#print');
 ul.addEventListener('click',sendRequest);
 
 function sendRequest(){
   let ur1='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0000-j.json';
-
+  let ur2='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0100-j.json';
+  let ur3='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0205-j.json';
+  let ur4='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0300-j.json';
+  let ur5='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0409-j.json';
+  let ur6='https://www.nishita-lab.org/web-contents/jsons/nhk/g1-0502-j.json';
+  let ul=document.querySelector('input[name="bangumi"]');
+  let num=ul.value;
+  let num2=Math.floor(num);
+  if(num2==1){
   console.log(ur1);
   axios.get(ur1)
   .then(showResult)
   .catch(showError)
-  .then(finish);
+  .then(finish);}
+  if(num2==2){
+    console.log(ur2);
+    axios.get(ur2)
+    .then(showResult)
+    .catch(showError)
+    .then(finish); 
+  }
+  if(num2==3){
+    console.log(ur3);
+    axios.get(ur3)
+    .then(showResult)
+    .catch(showError)
+    .then(finish); 
+  }
+  if(num2==4){
+    console.log(ur4);
+    axios.get(ur4)
+    .then(showResult)
+    .catch(showError)
+    .then(finish); 
+  }
+  if(num2==5){
+    console.log(ur5);
+    axios.get(ur5)
+    .then(showResult)
+    .catch(showError)
+    .then(finish); 
+  }
+  if(num2==5){
+    console.log(ur6);
+    axios.get(ur6)
+    .then(showResult)
+    .catch(showError)
+    .then(finish); 
+  }
 }
 
 function showResult(resp){
@@ -98,8 +140,15 @@ function showResult(resp){
   if(typeof data==='string'){
     data=JSON.parse(data);
   }
-  console.log(data);
-  console.log(data.x);
+  console.log(data.list.g1[0].title);
+  let i=document.querySelector('td#result');
+  i.textContent=(data.list.g1[0].title);
+  let l=document.querySelector('td#result2');
+  l.textContent=(data.list.g1[0].start_time);
+
+  let r=document.querySelector('td#result3');
+  r.textContent=(data.list.g1[0].end_time);
+
 }
 
 function showError(err){

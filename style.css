@@ -1,12 +1,5 @@
 h2{
-    font-size: 200%;
-    background: #047890;
-    border: 100%;
-    width: 650%;
-    margin:0px;
-    color:black;
-    height:100px;
-    text-align: center;
+    font-size: 200%
 }
 
 p:link

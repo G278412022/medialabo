@@ -1,5 +1,5 @@
 html{
- background-color: aqua;
+ background-image: url(megami-tensei-suguni-kese.jpg);
 }
 h1{
     font-size: 300%;
@@ -30,7 +30,7 @@ h4{
 }
 a:link
 {
-color: black;
+color: olive;
 }
 
 a:visited{
@@ -60,6 +60,9 @@ h5{
 }
 
 p2{font-size: 200%;}
-p,p2{
-    color: black;
+p, p2{
+    color:orange;
+}
+p3{
+    color: orange;
 }
